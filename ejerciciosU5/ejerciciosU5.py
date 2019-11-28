@@ -32,20 +32,20 @@ resultadoB = re.findall(patronB, texto)
 print "Resultado de Busqueda\n", resultadoB
 
 print "\nOperaciones de encabezado FOR,WHILE,IF,TRY"
-patronF= r'(for+\s*[A-Za-z0-9-_]+\s*[in]+\s*[A-Za-z0-9-_]+\s*:)'
-patronW = r'(while+\s*[A-Za-z0-9-_]+\s*[|<|>|!|<=|>=]=+\s*[A-Za-z0-9-_]+\s*:)'
-patronI = r'(if+\s*[A-Za-z0-9-_]+\s*[|<|>|!|<=|>=]=+\s*[A-Za-z0-9-_]+\s*:)'
-patronT = r'(try:+\s*[A-Za-z0-9-_]+\s*except+\s*[A-Za-z0-9-_]+\s*:)'
-resultadoF = re.findall(patronF, texto)
-resultadoW = re.findall(patronW,texto)
-resultadoI = re.findall(patronI,texto)
-resultadoT = re.findall(patronT,texto)
-print "Resultado de Busqueda\n", resultadoF
-print "Resultado de Busqueda\n", resultadoW
-print "Resultado de Busqueda\n", resultadoI
-print "Resultado de Busqueda\n", resultadoT
+patron1= r"(for+\s*[A-Za-z0-9-_]+\s*[in]+\s*[A-Za-z0-9-_]+\s*:)"
+patron2 = r"(while+\s*[A-Za-z0-9-_]+\s*[|<|>|!|<=|>=]=+\s*[A-Za-z0-9-_]+\s*:)"
+patron3 = r"(if+\s*[A-Za-z0-9-_]+\s*[|<|>|!|<=|>=]=+\s*[A-Za-z0-9-_]+\s*:)"
+patron4 = r"(try:+\s*[A-Za-z0-9-_]+\s*except+\s*[A-Za-z0-9-_]+\s*:)"
+resultado1 = re.findall(patron1, texto)
+resultado2 = re.findall(patron2,texto)
+resultado3 = re.findall(patron3,texto)
+resultado4 = re.findall(patron4,texto)
+print "Resultado de Busqueda\n", resultado1
+print "Resultado de Busqueda\n", resultado2
+print "Resultado de Busqueda\n", resultado3
+print "Resultado de Busqueda\n", resultado4
 
 print "\nFormulas complejas"
-patron= r'([A-Za-z0-9]+\s*=+\s*[A-Za-z0-9]+\s*[|<|>|!|<=|>=|\+|\-\*\/]\s*[(]+\s*[A-Za-z0-9]+\s*[|<|>|!|<=|>=|\+|\-\*\/]+\s*[A-Za-z0-9]+\s*[)])'
+patron= r"([A-Za-z0-9]+\s*=+\s*[A-Za-z0-9]+\s*[|<|>|!|<=|>=|\+|\-\*\/]\s*[(]+\s*[A-Za-z0-9]+\s*[|<|>|!|<=|>=|\+|\-\*\/]+\s*[A-Za-z0-9]+\s*[)])"
 resultado = re.findall(patron,texto)
 print "Resultado de Busqueda\n", resultado
