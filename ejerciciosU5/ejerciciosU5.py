@@ -27,9 +27,9 @@ print "Resultado de Busqueda\n", resultadoA
 
 
 print "\nOperaciones booleanas"
-patronC = r"([A-Za-z0-9|a-z0-9]+\s*[=|<|>|!|<=|>=]+\s*[A-Za-z0-9|a-z0-9]+)"
-resultadoC = re.findall(patronC, texto)
-print "Resultado de Busqueda\n", resultadoC
+patronB = r"([A-Za-z0-9|a-z0-9]+\s*[=|<|>|!|<=|>=]+\s*[A-Za-z0-9|a-z0-9]+)"
+resultadoB = re.findall(patronB, texto)
+print "Resultado de Busqueda\n", resultadoB
 
 print "\nOperaciones de encabezado FOR,WHILE,IF,TRY"
 patronF= r'(for+\s*[A-Za-z0-9-_]+\s*[in]+\s*[A-Za-z0-9-_]+\s*:)'
@@ -46,6 +46,6 @@ print "Resultado de Busqueda\n", resultadoI
 print "Resultado de Busqueda\n", resultadoT
 
 print "\nFormulas complejas"
-patronCO = r'([A-Za-z0-9]+\s*=+\s*[A-Za-z0-9]+\s*[|<|>|!|<=|>=|\+|\-\*\/]\s*[(]+\s*[A-Za-z0-9]+\s*[|<|>|!|<=|>=|\+|\-\*\/]+\s*[A-Za-z0-9]+\s*[)])'
-resultadoCO = re.findall(patronCO,texto)
-print "Resultado de Busqueda\n", resultadoCO
+patron= r'([A-Za-z0-9]+\s*=+\s*[A-Za-z0-9]+\s*[|<|>|!|<=|>=|\+|\-\*\/]\s*[(]+\s*[A-Za-z0-9]+\s*[|<|>|!|<=|>=|\+|\-\*\/]+\s*[A-Za-z0-9]+\s*[)])'
+resultado = re.findall(patron,texto)
+print "Resultado de Busqueda\n", resultado
