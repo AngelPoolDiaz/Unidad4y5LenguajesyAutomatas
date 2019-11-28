@@ -22,7 +22,7 @@ print "Resultado de busqueda\n", resultado
 
 
 print "\nEnteros y decimales"
-patron = r"([0-9]+.[0-9]+|[0-9]+)"
+patron = r"([0-9]+[.][0-9]+|[0-9]+)"
 result = re.findall(patron,texto) 
 print "Resultado de busqueda\n", result
 

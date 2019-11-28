@@ -1,7 +1,6 @@
 import re;
-La suma de  2.7 * 3.1416 es igual a 222 dolares
-multiplicacion 
-division 
+La suma de  2.7 * 3.1416
+10/2=5
 resta 5 + 455= 460 
 suma 20 - 20 = 0
 5 < 5 = 10 

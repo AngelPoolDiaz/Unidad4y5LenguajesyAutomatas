@@ -39,13 +39,11 @@ def app():
     num = int(input('Write a number: '))
     result = is(num)
 
-    if result is True:
+    if result = True:
         print('The number is prime!!')
     else:
         print('The number is not prime!!')
 
-if __name__ == '__main__':
-    app()
 
 for letra in entrada:
     if diccionario.has_key(letra):
